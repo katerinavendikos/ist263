@@ -72,23 +72,37 @@
                 <td>Collaboration</td>
             </tr>
         </table>
-        <form action="mailto:kvendiko@syr.edu"method="POST"</form>
+        <form action="mailto:kvendiko@syr.edu" method="POST">
+            <!-- input is for short text
+            the value of the for attribute in label must match the value of the id attribute -->
             <label for="fullname">Full Name:</label>
-            <input type="text"id="fullname" name="fullname"
-            <label for="Suggestions">Suggestions:</label>
-            <textarea id="suggestions" name="suggestions">Write your suggestions here</textarea>
+            <input type="text" id="fullname" name="fullname"
+            <br><br> 
+            <!-- textarea is for lots of writing -->
+            <label for="complaints">Complaint:</label>
+            <textarea id="complaints" name="complaints">Write your complaints here</textarea>
             <br>
-            <label for="level">Are you satisfied with my skills?</label>
-            <input type="radio" id="level1" name="level1" value="yes">
-            <label for="level1">yes</label>
-            <input type="radio" id="level2" name="level2" value="no">
-            <label for="level2">no</label>
+            <label for="level">How angry?</label>
+            <input type="radio" id="level1" name="level" value="very angry">
+            <label for="level1">very angry</label>
+            <input type="radio" id="level2" name="level" value="not very angry">
+            <label for="level2">not very angry</label>
+            <br>
+            <label for=:contact">Method of Contact</label>
+            <select id="contact" name="contact">
+                <option value="email">Email</option>
+                <option value="phone">Phone</option>
+                <option value="snail mail">Snail Mail</option>
+            </select>
+            <br>
+            <label for="afterbiz">Call after 5pm?</label><value="yes"></value>
+            <input type="checkbox" id="afterbiz" name="after5pm" value="yes">
 
             <br>
 
-            <input type="submit"value="Send My Suggestion"
+            <input type="submit" value="Send My Complaint"
         </form>
-   
-    </body>
 
-</html>
+    </body>
+    </html>
+    
