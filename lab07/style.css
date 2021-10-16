@@ -4,3 +4,5 @@ background-color: #033958;}
 h1 {color: #ffae00;}
 a:link {color:#bef0ff;}
 a:visited {color: #0084ff85}
+tr:nth-child(even) {
+    background-color:#ffae00}
