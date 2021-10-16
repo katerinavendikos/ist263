@@ -3,6 +3,9 @@ body {color:#e93da1;
 background-color: #033958;}
 h1 {color: #ffae00;}
 a:link {color:#bef0ff;}
-a:visited {color: #0084ff85}
+a:visited {color: #ffae00}
 tr:nth-child(even) {
     background-color:#ffae00}
+nav a {color: #feffff;
+padding: 10px; margin-bottom: 30px;}
+nav a:hover {background-color: #e93da1;}
