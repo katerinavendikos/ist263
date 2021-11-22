@@ -1,6 +1,4 @@
 body {font-family: Georgia, 'Times New Roman', Times, serif}
-h1, h2 {color: hotpink}
-tr:nth-child(even) {
-    background-color: purple}
+
 h1 {font-size: 400%}
 h2 {font-size: 200%}
