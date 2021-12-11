@@ -10,15 +10,19 @@
     
     body 
         {font-family:'Courier New', Courier, monospace;
-        background-color: rgb(241, 206, 185);
-        color: rgb(82, 28, 59);}
+        color: rgb(82, 28, 59);
+        background-color: rgb(240, 202, 202);
+        }
+        
     a:link 
-        {color: orange;}
+        {color: rgb(83, 24, 39);}
+    
     nav 
         {border: 1px solid rgb(82, 28, 59);
         padding: 20px;
         margin: 10px;
         border-radius: 1em;}
+
     .bridge 
         {float: left;
         padding-right: 2em;
@@ -30,7 +34,34 @@
         height: 100px;
         flex-wrap: wrap;}
     
-        
+    .clear {
+        clear: both; 
+    }
+    #footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 2.5rem;
+        padding-top: 1em ;
+    }
+
+    .page {
+        padding: 2em;
+    }
+    
+    .map {display: flex;
+    }
+
+    img {max-width: 100%; height: auto;
+    }
+
+    .aboutme {display: flex;
+        height: 100px;
+        flex-wrap: wrap;}
+
+    .meimage {max-width: 50%; height: auto;
+    }
+
     </style>
     </head>
 <body>
@@ -38,10 +69,10 @@
         <a href="https://katerinavendikos.github.io/ist263/project%20/home.html">Home</a> | 
         <a href="https://katerinavendikos.github.io/ist263/project%20/food.html">Food</a> |
         <a href="https://katerinavendikos.github.io/ist263/project%20/people.html">People</a> 
-    
         
     </nav>
-  
+
+<div class="page">
     <h1>Welcome to Brooklyn</h1>
     <h2>Introduction to Me</h2>
 
@@ -49,7 +80,7 @@
     <div class="bridge">
         <img src="../images/bridge.jpg" alt="Bridge">
     </div>
-    <p>
+
 <div class="introduction">
 <p>
 I was born and raised in Brooklyn, NY. The neighborhood I grew up in is called Bergan Beach. This neighborhood is near Mill Basin, Coney Island, Canarsie, and Marine Park. 
@@ -61,7 +92,28 @@ Brooklyn will always be home to me. In my neighborhood, everyone knows each othe
 Within close vicinity to my house, there is a mall and of course the famous Barclays Center. Also, a nearby drive from Bergen Beach includes the Brooklyn Botanical Gardens. The Brooklyn Botanical Gardens offers a day’s worth of walking around. In Prospect Park in the wintertime, there is an ice-skating rink and café. Another fun place to visit is the Brooklyn Museum, an art museum also located near Prospect Park. On weekends in the summer, there is a food fair called Smorgasburg. Make sure you go on an empty stomach as there are tons of local vendors!
 </p>
 </div>
+<div class="map">
+    <p> Below is a map of where you can find Smorgasburg!
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3026.671702983101!2d-73.96857758459673!3d40.659166679337666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25b337922750b%3A0xf9d62826e5a6b5b8!2sSmorgasburg%20Prospect%20Park!5e0!3m2!1sen!2sus!4v1638836387541!5m2!1sen!2sus" width="400" height="420" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
+    </p>
+    </div>
+
+<div class="aboutme">
+    <h2>Meet the Developer</h2>
+    <div class="meimage">
+        <img src="../images/me.jpg" alt="Me">
+    </div>
+</div>
+<footer id="footer">
+    <div class="copyright">
+        &copy; 2021
+    </div>
+<p>Katerina Vendikos IST263 Project</p>
+</footer>
+<div class="clear"></div>
+<hr>
 
 
+</div>
 
 </body>
