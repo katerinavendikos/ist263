@@ -5,13 +5,22 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Welcome to Brooklyn</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Jost&display=swap" rel="stylesheet">
+    
 
     <style>
     
     body 
-        {font-family:'Courier New', Courier, monospace;
+        {font-family: 'Jost', sans-serif;
         color: rgb(82, 28, 59);
         background-color: rgb(240, 202, 202);
+        padding: 1em
+        }
+    h1, h2 {
+        text-align: center;
+        font-family: 'Abril Fatface', cursive;
         }
         
     a:link 
@@ -21,7 +30,8 @@
         {border: 1px solid rgb(82, 28, 59);
         padding: 20px;
         margin: 10px;
-        border-radius: 1em;}
+        border-radius: 1em;
+        }
 
     .bridge 
         {float: left;
@@ -31,36 +41,25 @@
    
     .introduction
         {display: flex;
-        height: 100px;
-        flex-wrap: wrap;}
-    
-    .clear {
-        clear: both; 
-    }
-    #footer {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        height: 2.5rem;
-        padding-top: 1em ;
-    }
-
-    .page {
-        padding: 2em;
     }
     
-    .map {display: flex;
+    .brooklynimages {display: flex;}
+
+    img {max-width: 50%;
+    height: auto;}
+    
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
     }
 
-    img {max-width: 100%; height: auto;
+    .meetme
+    {display: flex;
     }
 
-    .aboutme {display: flex;
-        height: 100px;
-        flex-wrap: wrap;}
-
-    .meimage {max-width: 50%; height: auto;
-    }
+        
 
     </style>
     </head>
@@ -72,46 +71,50 @@
         
     </nav>
 
-<div class="page">
+
     <h1>Welcome to Brooklyn</h1>
-    <h2>Introduction to Me</h2>
+    <h2>How Sweet It Is!</h2>
 
-
-    <div class="bridge">
-        <img src="../images/bridge.jpg" alt="Bridge">
+    <div class="brooklynimages">
+        <img src="brooklynbridge.jpg" alt="brooklynbridge" class="center">
+        <img src="howsweetitis.jpg" alt="howsweetitis" class="center">
+        
     </div>
 
-<div class="introduction">
-<p>
-I was born and raised in Brooklyn, NY. The neighborhood I grew up in is called Bergan Beach. This neighborhood is near Mill Basin, Coney Island, Canarsie, and Marine Park. 
-</p>
-<p>
-Brooklyn will always be home to me. In my neighborhood, everyone knows each other. Many of the neighbors own local small businesses (mostly restaurants) and people love to support one another.
-</p>
-<p>
-Within close vicinity to my house, there is a mall and of course the famous Barclays Center. Also, a nearby drive from Bergen Beach includes the Brooklyn Botanical Gardens. The Brooklyn Botanical Gardens offers a day’s worth of walking around. In Prospect Park in the wintertime, there is an ice-skating rink and café. Another fun place to visit is the Brooklyn Museum, an art museum also located near Prospect Park. On weekends in the summer, there is a food fair called Smorgasburg. Make sure you go on an empty stomach as there are tons of local vendors!
-</p>
-</div>
-<div class="map">
-    <p> Below is a map of where you can find Smorgasburg!
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3026.671702983101!2d-73.96857758459673!3d40.659166679337666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25b337922750b%3A0xf9d62826e5a6b5b8!2sSmorgasburg%20Prospect%20Park!5e0!3m2!1sen!2sus!4v1638836387541!5m2!1sen!2sus" width="400" height="420" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
+    <div id="intro">
+    <p>
+    Home to 2.59 million people, Brooklyn is the sweetest place to be. Located outside of Manhattan, over the Brooklyn Bridge--or the Williamsburg Bridge, or the Hugh L. Carrey Tunnel, or even the Manhattan Bridge is a world full of different cultures, histories, and experiences </p> 
+    <p>
+    This website will be able to give you a small slice of things to do here in our little slice of New York! Perhaps you'll want to have some pizza or go to a museum. You might just want to take a walk around. We can help with that!
+    </p>
+    <p>
+    Enjoy your stay! Once you enter, when you think of leaving, you'll say "fuhgeddaboudit!"
     </p>
     </div>
+    
 
-<div class="aboutme">
     <h2>Meet the Developer</h2>
-    <div class="meimage">
+    <div class="meetme">
+        <div>
         <img src="../images/me.jpg" alt="Me">
+        </div>
+        <div>
+    <p>
+        My name is Katerina and I was born and raised in Brooklyn, NY. I attend Syracuse University as a political science major, with minors in the iSchool in Information Management and Technology as well as a Psychology minor in the College of Arts and Sciences. I hope you enjoy this website as I have had the pleasure of making it thanks to the help of Professor Ferger in our class IST 263: Introduction to Front-End Web Development. If you want to get in touch, feel free to connect with me on <a href= "http://linkedin.com/in/katerina-vendikos"target="_blank">LinkedIn</a>.
+        </p>
     </div>
-</div>
+    </div>
+
+
+
+<hr>
 <footer id="footer">
     <div class="copyright">
         &copy; 2021
-    </div>
+ 
 <p>Katerina Vendikos IST263 Project</p>
 </footer>
-<div class="clear"></div>
-<hr>
+
 
 
 </div>
