@@ -8,7 +8,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Jost&display=swap" rel="stylesheet">
-    
+        <link rel="stylesheet" href="../project/styles.css">
 
     <style>
     
@@ -57,18 +57,32 @@
 
     .meetme
     {display: flex;
-    }
+    }  
 
-        
 
     </style>
+    <script>
+        function TurnNavOnOff () {
+                        if (document.getElementById("navlinks").style.getPropertyValue("display") == 'block') {
+                            document.getElementById("navlinks").style.display = "none";
+                        }
+                        else {
+                            document.getElementById("navlinks").style.display = "block";
+                        }
+       
+    </script>
+   
     </head>
 <body>
+    
     <nav>
+        <img src="https://laferger.github.io/ist263/images/hamburger.png" width="35" onclick="TurnNavOnOff();" alt="hamicon" id="hamicon">
+
+    <div id="navigation">
         <a href="https://katerinavendikos.github.io/ist263/project%20/home.html">Home</a> | 
         <a href="https://katerinavendikos.github.io/ist263/project%20/food.html">Food</a> |
         <a href="https://katerinavendikos.github.io/ist263/project%20/people.html">People</a> 
-        
+    </div>
     </nav>
 
 

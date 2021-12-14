@@ -1,0 +1,44 @@
+body 
+{font-family: 'Jost', sans-serif;
+color: rgb(82, 28, 59);
+background-color: rgb(240, 202, 202);
+padding: 1em
+}
+h1, h2 {
+text-align: center;
+font-family: 'Abril Fatface', cursive;
+}
+
+a:link 
+{color: rgb(83, 24, 39);}
+
+nav 
+{border: 1px solid rgb(82, 28, 59);
+padding: 20px;
+margin: 10px;
+border-radius: 1em;
+}
+
+#hamicon {display: none;}
+nav a:hover {background-color: rgb(29, 11, 11);}
+
+@media only screen and (max-width: 900px) {
+  span {display: none;}
+  #hamicon {display: block; margin: 20 px;}
+  nav a {display: block; padding: 10px 0px;}
+  #navlinks {display: none;}
+  .title {max-width:100%; font-size:small;
+      margin-top: -50px;
+      margin-left: -100px;}
+  #modal {max-width: 80%;
+      margin-top: -60px;
+      margin-left: -60px;}
+     
+  nav a{ display:block; margin-bottom: 20px;}
+   span {display: none;}
+   .introfood, .bio {
+           padding-left: 20px;
+          padding-right:20px;}
+  .tomato {max-width:100%;}
+
+}
