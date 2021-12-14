@@ -34,10 +34,23 @@
         }
 
     img {
-        max-width: 60%;
+        max-width: 40%;
         height: auto;}
 
+        .pizza {flex-basis: 40%;
+        }
+
     </style>
+    <script>
+        function TurnNavOnOff () {
+                if (document.getElementById("navigation").style.getPropertyValue("display") == 'block') {
+                    document.getElementById("navigation").style.display = "none";
+                }
+                else {
+                    document.getElementById("navigation").style.display = "block";
+                }
+            }
+    </script>
     </head>
 
 <body>
@@ -53,12 +66,17 @@
 <p>
 Brooklyn is a large borough. There are so many places to enjoy food and conversation. However, there are a few places that are home to native Brooklynites.
 </p>
-<p>
-The first place I will highlight is L&B Spumoni Gardens, home of the delicious Sicilian square pizza and spumoni ice cream. L&B Spumoni Gardens has been serving pizza and spumoni since 1939. Originating on 86th street in Brooklyn, there are now three locations that are thriving. L&B Spumoni Gardens is a proudly family-owned business, owned and loved by the Barbati family. The third location also has a dining room for more refined Italian plates.
-</p>
+<h2>L&B Spumoni Gardens</h2>
+
+<div class="pizzainfo">
+        <div class="descriptionforpizza">
+    <p>
+    The first place I will highlight is L&B Spumoni Gardens, home of the delicious Sicilian square pizza and spumoni ice cream. L&B Spumoni Gardens has been serving pizza and spumoni since 1939. Originating on 86th street in Brooklyn, there are now three locations that are thriving. L&B Spumoni Gardens is a proudly family-owned business, owned and loved by the Barbati family. The third location also has a dining room for more refined Italian plates.
+    </p>
+    </div>
 <div class="pizza">
     <img src="pizza.jpg" alt="Pizza"
-    
+</div>
 </div>
 <p>
 Another great place is Roll-N-Roaster, located in Sheepshead Bay, Brooklyn. It coins itself as the not-so-fast-fast-food restaurant. Roll-N-Roaster’s specialty is roast beef sandwiches with cheese. At Roll-N-Roaster, you could put cheese on everything. On their menu includes delicious corn fritters, cheese fries, pizza, fresh squeezed lemonade and more!

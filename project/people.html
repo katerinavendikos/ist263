@@ -16,8 +16,20 @@
 
     }
     img {max-width: 40%;}
-    
+    .park {display: flex;
+    justify-content: space-evenly;}
+     
 </style>
+<script>
+    function TurnNavOnOff () {
+            if (document.getElementById("navigation").style.getPropertyValue("display") == 'block') {
+                document.getElementById("navigation").style.display = "none";
+            }
+            else {
+                document.getElementById("navigation").style.display = "block";
+            }
+        }
+</script>
   
 </head>
 <body>
@@ -36,12 +48,12 @@
         <div id="parkinfo">
             <h2>Prospect Park</h2>
             <p>When it is warm out, grab a friend and walk around the park! Spanning 586 acres, you will not even feel like you are in Brooklyn anymore. There is even a zoo and iceskating in the winter. </p>
-            <img src="prospectpark.jpg" alt="prospectpark" id="prospectpark">
+            <img src="prospectpark.jpg" alt="prospectpark" id="prospectpark" class="park">
         </div>
         <div id="museuminfo">
             <h2>Brooklyn Museum</h2>
             <p> Take a walk around the Brooklyn Museum! Here, you can view beautiful works of art. There is ancient art on display, as well as modern art. <a href= "https://www.brooklynmuseum.org/exhibitions"target="_blank">Here </a>is the link to the website so you can see what exhibits are available.  </p>
-            <img src="brooklynmuseum.jpg" alt="brooklynmuseum" id="brooklynmuseum">
+            <img src="brooklynmuseum.jpg" alt="brooklynmuseum" id="brooklynmuseum" class="museum">
             
         </div>
        
