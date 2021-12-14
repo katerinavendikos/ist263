@@ -8,20 +8,46 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Jost&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../project/styles.css">
+       
     
 
 <style>
     .thingstodo {
         display: flex;
         padding: 2em;
+        margin-right: 1em;
+        margin-left: 1em;
+        background-color: blanchedalmond;
+        justify-content: space-around;
+    
+
     }
 
-    img {max-width: 40%;
+    img {max-width: 70%;
     justify-content: space-evenly;}
+    
+    .parkinfo {
+        margin-right: 15px;
+        margin-left: 15px;
+   
+    }
+    .museuminfo {
+        margin-right: 15px;
+        margin-left: 1px;
+    
+   
+    }
      
 </style>
 <script>
-
+function TurnNavOnOff () {
+                if (document.getElementById("navigation").style.getPropertyValue("display") == 'block') {
+                    document.getElementById("navigation").style.display = "none";
+                }
+                else {
+                    document.getElementById("navigation").style.display = "block";
+                }
+            }
 </script>
   
 </head>
@@ -31,7 +57,7 @@
     <div id="navigation">
         <a href="https://katerinavendikos.github.io/ist263/project/home.html">Home</a> | 
         <a href="https://katerinavendikos.github.io/ist263/project/food.html">Food</a> |
-        <a href="https://katerinavendikos.github.io/ist263/project/people.html">People</a> 
+        <a href="https://katerinavendikos.github.io/ist263/project/places.html">People</a> 
     </div>
     </nav>
 <h1>Fun Things To Do </h1>
@@ -43,12 +69,13 @@
         
             <img src="prospectpark.jpg">
         </div>
-            
+        <div>
+        </div>
         <div id="museuminfo">
             <h2>Brooklyn Museum</h2>
             <p> Take a walk around the Brooklyn Museum! Here, you can view beautiful works of art. There is ancient art on display, as well as modern art. <a href= "https://www.brooklynmuseum.org/exhibitions"target="_blank">Here </a>is the link to the website so you can see what exhibits are available.  </p>
 
-            <img src="brooklynmuseum.jpg">
+            <img src="brooklynmuseum.jpg"> 
             
         </div>
        
