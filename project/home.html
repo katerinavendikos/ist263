@@ -52,8 +52,10 @@
     .meetme
     {display: flex;
     }  
-    .me {padding:left 1em;}
-
+    .me {display: flex; flex: 1; margin-right: 15px; padding: 20px; background-color: blanchedalmond; border-radius: 1em;}
+    .metext {background-color: blanchedalmond; border-radius: 1em; padding: 20px }
+    @media only screen and (max-width: 600px)
+    {nav {display: none}}
 
     </style>
     <script>
@@ -104,9 +106,9 @@
     <h2>Meet the Developer</h2>
     <div class="meetme">
         <div>
-        <img src="../images/me.jpg" alt="Me" id="me">
+        <img class="me" src="../images/me.jpg" alt="Me" id="me">
         </div>
-        <div>
+        <div class="metext">
     <p>
         My name is Katerina and I was born and raised in Brooklyn, NY. I attend Syracuse University as a political science major, with minors in the iSchool in Information Management and Technology as well as a Psychology minor in the College of Arts and Sciences. I hope you enjoy this website as I have had the pleasure of making it thanks to the help of Professor Ferger in our class IST 263: Introduction to Front-End Web Development. If you want to get in touch, feel free to connect with me on <a href= "http://linkedin.com/in/katerina-vendikos">LinkedIn</a>.
         </p>
